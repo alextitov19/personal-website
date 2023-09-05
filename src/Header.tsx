@@ -10,6 +10,9 @@ function Header() {
             <h3>Full-Stack Developer</h3>
             <h6>Comp Sci & Eng @ UC Merced</h6>
         </div>
+        <div className='header-links'>
+            <h1 >Contact</h1>
+        </div>
     </div >
 }
 

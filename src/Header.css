@@ -11,6 +11,16 @@
 .header-text {
     margin: 30px;
     color: #93e3f9;
+    float: left;
+}
+
+.header-links {
+    text-align: right;
+    margin: 30px;
+    color: #93e3f9;
+    float: none;
+    overflow: hidden;
+    flex-grow: 1;
 }
 
 /* Animations START */
