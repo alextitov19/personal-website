@@ -5,7 +5,8 @@ function Header() {
         <button className='button-85'>
             <img src='../public/profile.jpg' className="header-image" alt="..."></img>
         </button>
-    </div>
+        <h3 className='animate-charcter'>Alex Titov</h3>
+    </div >
 }
 
 export default Header;
