@@ -8,7 +8,16 @@
     display: flex;
 }
 
+.header-text {
+    margin: 30px;
+    color: #93e3f9;
+}
 
+/* Animations START */
+
+
+
+/* Text Animation START */
 .animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
@@ -26,7 +35,7 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 190px;
+    font-size: 50px;
 }
 
 @keyframes textclip {
@@ -35,6 +44,9 @@
     }
 }
 
+/* Text Animation END */
+
+/* Button/Image Animation START */
 .button-85 {
     border: none;
     outline: none;
@@ -56,15 +68,15 @@
 .button-85:before {
     content: "";
     background: linear-gradient(45deg,
-            #ff0000,
-            #ff7300,
-            #fffb00,
-            #48ff00,
-            #00ffd5,
-            #002bff,
-            #7a00ff,
-            #ff00c8,
-            #ff0000);
+            #7fb7f2,
+            #6bbad2,
+            #6fb2ff,
+            #93e3f9,
+            #68ffe6,
+            #92a3fb,
+            #75b1ff,
+            #37a6da,
+            #4cb7ff);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -103,3 +115,5 @@
     top: 0;
     border-radius: 50%;
 }
+
+/* Button/Image Animation END */

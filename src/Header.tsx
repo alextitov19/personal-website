@@ -5,7 +5,11 @@ function Header() {
         <button className='button-85'>
             <img src='../public/profile.jpg' className="header-image" alt="..."></img>
         </button>
-        <h3 className='animate-charcter'>Alex Titov</h3>
+        <div className='header-text'>
+            <h1 className='animate-charcter'>Alex Titov</h1>
+            <h3>Full-Stack Developer</h3>
+            <h6>Comp Sci & Eng @ UC Merced</h6>
+        </div>
     </div >
 }
 

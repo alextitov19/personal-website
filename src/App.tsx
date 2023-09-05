@@ -1,9 +1,11 @@
 import Header from "./Header";
+import './App.css'
 
 function App() {
   return <div>
     <Header />
-  </div>
+    <div className="pacman" />
+  </div >
 }
 
 export default App;
