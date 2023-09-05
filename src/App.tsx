@@ -1,10 +1,11 @@
 import Header from "./Header";
+import PacManDivider from "./PacManDivider";
 import './App.css'
 
 function App() {
   return <div>
     <Header />
-    <div className="pacman" />
+    <PacManDivider />
   </div >
 }
 
