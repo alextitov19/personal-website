@@ -14,14 +14,22 @@
     float: left;
 }
 
+.header-spacer {
+    flex-grow: 1;
+}
+
 .header-links {
-    text-align: right;
     margin: 30px;
     color: #93e3f9;
     float: none;
     overflow: hidden;
-    flex-grow: 1;
 }
+
+.link-text {
+    color: #93e3f9;
+}
+
+.link {}
 
 /* Animations START */
 

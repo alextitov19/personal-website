@@ -10,8 +10,14 @@ function Header() {
             <h3>Full-Stack Developer</h3>
             <h6>Comp Sci & Eng @ UC Merced</h6>
         </div>
+        <div className='header-spacer' />
         <div className='header-links'>
-            <h1 >Contact</h1>
+            <h6><a className="link-text" href="#">alextitov203@gmail.com</a></h6>
+            <h6><a className="link-text" href="#">https://github.com/alextitov19</a></h6>
+
+
+
+
         </div>
     </div >
 }
