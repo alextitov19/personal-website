@@ -14,23 +14,18 @@
     float: left;
 }
 
-.header-spacer {
-    flex-grow: 1;
-}
-
-.header-links {
-    margin: 30px;
-    color: #93e3f9;
-    float: none;
-    overflow: hidden;
-}
-
 .link-text {
     color: #93e3f9;
     text-decoration: none;
+    font-size: 30px;
 }
 
-.link {}
+.link-middle-margin {
+    color: #93e3f9;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px;
+}
 
 /* Animations START */
 
