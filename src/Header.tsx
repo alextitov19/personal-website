@@ -13,7 +13,7 @@ function Header() {
         <div className='header-spacer' />
         <div className='header-links'>
             <h6><a className="link-text" href="https://mail.google.com/mail/?view=cm&fs=1&to=alextitov203@gmail.com">alextitov203@gmail.com</a></h6>
-            <h6><a className="link-text" href="#">https://github.com/alextitov19</a></h6>
+            <h6><a className="link-text" href="https://github.com/alextitov19">github.com/alextitov19</a></h6>
 
 
 
