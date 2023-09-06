@@ -1,16 +1,38 @@
 .work-experience {
-    /* color: #93e3f9;
+    color: #93e3f9;
     text-align: center;
     width: 65vw;
-    margin-top: 50px; */
+    margin-top: 50px;
+}
+
+.box-header {
+    display: flex;
+    background: none;
+}
+
+.box-title {
+    float: left;
+    color: aliceblue;
+}
+
+.box-date {
+    text-align: right;
+    flex-grow: 1;
+    color: aliceblue;
+}
+
+.box-subtitle {
+    color: aliceblue;
 }
 
 
 .box {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
     --border-size: 3px;
     --border-angle: 0turn;
-    width: 60vmin;
-    height: 50vmin;
+    width: 60vw;
     background-image: conic-gradient(from var(--border-angle),
             #213,
             #112 50%,
