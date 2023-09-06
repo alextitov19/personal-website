@@ -2,12 +2,17 @@ import Header from "./Header";
 import PacManDivider from "./PacManDivider";
 import './App.css'
 import WorkExperience from "./WorkExperience";
+import Skills from "./Skills";
 
 function App() {
   return <div>
     <Header />
     <PacManDivider />
-    <WorkExperience />
+    <div className="side-split">
+      <WorkExperience />
+      <Skills />
+    </div>
+
   </div >
 }
 
