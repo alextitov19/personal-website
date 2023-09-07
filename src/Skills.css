@@ -1,8 +1,18 @@
+.skills {
+    color: #b7eeff;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 5vw;
+}
+
+.h4-custom {
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
 .mycustomcard {
     position: relative;
-    width: 300px;
-    height: 300px;
-    color: #fff;
+    color: #b7eeff;
     background: transparent;
     overflow: hidden;
     border-top: 1px solid rgba(255, 49, 49, 0.5);

@@ -1,16 +1,14 @@
 import './Skills.css'
 
 function Skills() {
-    return <div>
+    return <div className='skills'>
+        <h2>Skills</h2>
         <article className="mycustomcard">
-            <h3>Border Animation</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum quam
-                mollitia sit aliquam omnis nisi neque nulla, ipsa obcaecati eveniet
-                incidunt doloribus quaerat at totam nemo exercitationem, officiis
-                quisquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Necessitatibus, quisquam perferendis
-            </p>
+            <h4 className='h4-custom'>Languages</h4>
+            <pre>HTML/CSS   JavaScript   TypeScript</pre>
+            <pre>Java          C++           Python</pre>
+            <pre>Flutter      SqiftUI        Kotlin</pre>
+            <pre>Go            noSQL            SQL</pre>
             <span className="top"></span>
             <span className="right"></span>
             <span className="bottom"></span>
