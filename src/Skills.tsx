@@ -18,7 +18,8 @@ function Skills() {
             <pre>Angular       React        Express</pre>
             <pre>AWS           GCloud      REST API</pre>
             <pre>Docker      Kubernetes       Redis</pre>
-            <pre>Git         Web Sockets         ML</pre>
+            <pre>Git         Web Sockets        JWT</pre>
+            <pre>RedHat       Bootstrap          ML</pre>
             <span className="top"></span>
             <span className="right"></span>
             <span className="bottom"></span>
