@@ -1,133 +1,141 @@
 .header-image {
-    width: 200px;
-    border-radius: 50%;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .header-main {
-    background-color: black;
-    display: flex;
+  background-color: black;
+  display: flex;
 }
 
 .header-text {
-    margin: 30px;
-    color: #93e3f9;
-    float: left;
+  margin: 30px;
+  color: #93e3f9;
+  float: left;
 }
 
 .link-text {
-    color: #93e3f9;
-    text-decoration: none;
-    font-size: 30px;
+  color: #93e3f9;
+  text-decoration: none;
+  font-size: 30px;
 }
 
 .link-middle-margin {
-    color: #93e3f9;
-    text-decoration: none;
-    font-size: 30px;
-    margin: 20px;
+  color: #93e3f9;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.about-me {
+  font-size: 20px;
+  color: #93e3f9;
+  margin: 20px;
 }
 
 /* Animations START */
 
-
-
 /* Text Animation START */
 .animate-charcter {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            #5596fe 0%,
-            #106f7a 29%,
-            #51f6a3 67%,
-            #c3fdff 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 50px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #5596fe 0%,
+    #106f7a 29%,
+    #51f6a3 67%,
+    #c3fdff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
 }
 
 @keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
+  to {
+    background-position: 200% center;
+  }
 }
 
 /* Text Animation END */
 
 /* Button/Image Animation START */
 .button-85 {
-    border: none;
-    outline: none;
-    background-color: black;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    text-align: center;
-    margin: auto;
-    margin: 20px;
-    font-size: 24px;
-    font-weight: 350;
+  border: none;
+  outline: none;
+  background-color: black;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+  margin: auto;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 350;
 }
 
 .button-85:before {
-    content: "";
-    background: linear-gradient(45deg,
-            #7fb7f2,
-            #6bbad2,
-            #6fb2ff,
-            #93e3f9,
-            #68ffe6,
-            #92a3fb,
-            #75b1ff,
-            #37a6da,
-            #4cb7ff);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing-button-85 20s linear infinite;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 50%;
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #7fb7f2,
+    #6bbad2,
+    #6fb2ff,
+    #93e3f9,
+    #68ffe6,
+    #92a3fb,
+    #75b1ff,
+    #37a6da,
+    #4cb7ff
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50%;
 }
 
 @keyframes glowing-button-85 {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    50% {
-        background-position: 400% 0;
-    }
+  50% {
+    background-position: 400% 0;
+  }
 
-    100% {
-        background-position: 0 0;
-    }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .button-85:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
 }
 
 /* Button/Image Animation END */
