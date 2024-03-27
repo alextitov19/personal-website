@@ -1,3 +1,7 @@
 .side-split {
-    display: flex;
+  display: flex;
+}
+
+.custom-div-main {
+  color: white;
 }
