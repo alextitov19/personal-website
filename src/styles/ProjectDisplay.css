@@ -27,3 +27,9 @@
   font-size: 60px;
   color: #3e497a;
 }
+
+.project a {
+  font-size: 20px;
+  color: #3e497a;
+  padding-inline: 10px;
+}

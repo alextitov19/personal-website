@@ -1,11 +1,15 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import AppleIcon from "@material-ui/icons/Apple";
+
 import "../styles/ProjectDisplay.css";
 function ProjectDisplay() {
   const { id } = useParams();
   const project = ProjectList[id];
+  const navigate = useNavigate();
+
   return (
     <div className="project">
       <h1>{project.name}</h1>
@@ -13,7 +17,33 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <GitHubIcon onClick={() => window.open(project.link)} />
+      {id < 2 ? (
+        <div style={{ textAlign: "center" }}>
+          <AppleIcon onClick={() => window.open(project.link)} />
+          {id == 0 ? (
+            <div>
+              <a
+                onClick={() => {
+                  navigate("/project/parkpals/tos");
+                }}
+              >
+                <u>Terms of Service</u>
+              </a>
+              <a
+                onClick={() => {
+                  navigate("/project/parkpals/privacy");
+                }}
+              >
+                <u>Privacy Policy</u>
+              </a>
+            </div>
+          ) : (
+            <div />
+          )}
+        </div>
+      ) : (
+        <GitHubIcon onClick={() => window.open(project.link)} />
+      )}
     </div>
   );
 }
