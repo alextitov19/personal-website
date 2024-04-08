@@ -14,9 +14,17 @@ function Home() {
             A Software Engineer with a passion for leveraging cutting-edge
             technology to innovate and create impactful solutions.
           </p>
-          <LinkedInIcon />
-          <GitHubIcon />
-          <EmailIcon />
+          <LinkedInIcon
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/alex-titov-b072451a9/")
+            }
+          />
+          <GitHubIcon
+            onClick={() => window.open("https://github.com/alextitov19")}
+          />
+          <a href="mailto:alextitov203@gmail.com">
+            <EmailIcon />
+          </a>
         </div>
       </div>
       <div className="skills">
