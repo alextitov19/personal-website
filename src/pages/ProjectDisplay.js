@@ -24,14 +24,14 @@ function ProjectDisplay() {
             <div>
               <a
                 onClick={() => {
-                  navigate("/project/parkpals/tos");
+                  navigate("/parkpals/tos");
                 }}
               >
                 <u>Terms of Service</u>
               </a>
               <a
                 onClick={() => {
-                  navigate("/project/parkpals/privacy");
+                  navigate("/parkpals/privacy");
                 }}
               >
                 <u>Privacy Policy</u>
