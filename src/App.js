@@ -1,10 +1,5 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
@@ -25,12 +20,6 @@ function App() {
           <Route path="/project/parkpals/privacy" element={<PrivacyPolicy />} />
           <Route path="/project/parkpals/tos" element={<TermsOfService />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/parkpals/privacy">
-            <Navigate to="/project/parkpals/privacy" />
-          </Route>
-          <Route path="/parkpals/tos">
-            <Navigate to="/project/parkpals/tos" />
-          </Route>
         </Routes>
         <Footer />
       </Router>
