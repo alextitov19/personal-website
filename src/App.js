@@ -9,7 +9,6 @@ import ProjectDisplay from "./pages/ProjectDisplay";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 function App() {
-  const reload = () => window.location.reload();
   return (
     <div className="App">
       <Router>
@@ -18,17 +17,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<ProjectDisplay />} />
-          <Route
-            path="/project/parkpals/privacy"
-            onEnter={reload}
-            element={<PrivacyPolicy />}
-          />
-          <Route
-            path="/project/parkpals/tos"
-            onEnter={reload}
-            element={<TermsOfService />}
-          />
+          <Route path="/project/parkpals/privacy" element={<PrivacyPolicy />} />
+          <Route path="/project/parkpals/tos" element={<TermsOfService />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/parkpals/privacy">
+            <Navigate to="/project/parkpals/privacy" />
+          </Route>
+          <Route path="/parkpals/tos">
+            <Navigate to="/project/parkpals/tos" />
+          </Route>
         </Routes>
         <Footer />
       </Router>
