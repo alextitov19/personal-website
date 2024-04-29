@@ -17,7 +17,7 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      {id < 3 ? (
+      {id == 1 ?? id == 2 ? (
         <div style={{ textAlign: "center" }}>
           <AppleIcon onClick={() => window.open(project.link)} />
           {id == 1 ? (
