@@ -10,7 +10,7 @@ export const ProjectList = [
     name: "Alynx",
     image: alynx,
     skills:
-      "Natural Language Processing (NLP), Machine Learning, Deep Learning, Text Generation, Text Classification, Named Entity Recognition (NER), Sentiment Analysis, Knowledge Representation, Data Preprocessing, Model Deployment, API Development, Scalability, Error Handling, Continuous Integration/Continuous Deployment (CI/CD), Privacy and Security, User Experience (UX) Design, Version Control, Documentation, Performance Optimization, Monitoring and Analytics",
+      "NLP, ML, DL, Text Gen, Text Class, NER, Sent Analysis, Knowledge Rep, Data Prep, Model Deploy, API Dev, Scalability, Error Handling, CI/CD, Privacy, UX Design, Version Control, Documentation, Perf Optimization, Monitoring",
     link: "https://alynxua.ucmerced.edu",
   },
   {
