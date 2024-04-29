@@ -17,10 +17,10 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      {id < 2 ? (
+      {id < 3 ? (
         <div style={{ textAlign: "center" }}>
           <AppleIcon onClick={() => window.open(project.link)} />
-          {id == 0 ? (
+          {id == 1 ? (
             <div>
               <a
                 onClick={() => {
