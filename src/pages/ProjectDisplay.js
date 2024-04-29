@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import AppleIcon from "@material-ui/icons/Apple";
+import LinkIcon from "@material-ui/icons/Link";
 
 import "../styles/ProjectDisplay.css";
 function ProjectDisplay() {
@@ -17,7 +18,7 @@ function ProjectDisplay() {
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      {id == 1 ?? id == 2 ? (
+      {id == 1 || id == 2 ? (
         <div style={{ textAlign: "center" }}>
           <AppleIcon onClick={() => window.open(project.link)} />
           {id == 1 ? (
@@ -42,7 +43,13 @@ function ProjectDisplay() {
           )}
         </div>
       ) : (
-        <GitHubIcon onClick={() => window.open(project.link)} />
+        <div>
+          {id == 0 ? (
+            <LinkIcon onClick={() => window.open(project.link)} />
+          ) : (
+            <GitHubIcon onClick={() => window.open(project.link)} />
+          )}
+        </div>
       )}
     </div>
   );
