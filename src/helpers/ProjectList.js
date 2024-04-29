@@ -3,8 +3,16 @@ import parkpals from "../assets/parkpals.png";
 import unity from "../assets/unity.png";
 import gopnik from "../assets/gopnik.png";
 import golf from "../assets/golf.png";
+import alynx from "../assets/alynx.png";
 
 export const ProjectList = [
+  {
+    name: "Alynx",
+    image: alynx,
+    skills:
+      "Natural Language Processing (NLP), Machine Learning, Deep Learning, Text Generation, Text Classification, Named Entity Recognition (NER), Sentiment Analysis, Knowledge Representation, Data Preprocessing, Model Deployment, API Development, Scalability, Error Handling, Continuous Integration/Continuous Deployment (CI/CD), Privacy and Security, User Experience (UX) Design, Version Control, Documentation, Performance Optimization, Monitoring and Analytics",
+    link: "https://alynxua.ucmerced.edu",
+  },
   {
     name: "ParkPals",
     image: parkpals,
