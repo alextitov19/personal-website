@@ -11,7 +11,7 @@ export const ProjectList = [
     image: alynx,
     skills:
       "NLP, ML, DL, Text Gen, Text Class, NER, Sent Analysis, Knowledge Rep, Data Prep, Model Deploy, API Dev, Scalability, Error Handling, CI/CD, Privacy, UX Design, Version Control, Documentation, Perf Optimization, Monitoring",
-    link: "https://alynxua.ucmerced.edu",
+    link: "https://alynx.ucmerced.edu",
   },
   {
     name: "ParkPals",
