@@ -19,6 +19,8 @@ function App() {
           <Route path="/project/:id" element={<ProjectDisplay />} />
           <Route path="/parkpals/privacy" element={<PrivacyPolicy />} />
           <Route path="/parkpals/tos" element={<TermsOfService />} />
+          <Route path="/ninja/privacy" element={<PrivacyPolicy />} />
+          <Route path="/ninja/tos" element={<TermsOfService />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer />
