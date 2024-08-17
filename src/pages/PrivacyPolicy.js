@@ -44,7 +44,7 @@ function PrivacyPolicy() {
         </li>
         <li>
           <p>
-            <strong>Application</strong> refers to ParkPals, the software
+            <strong>Application</strong> refers to AlgoNinja, the software
             program provided by the Company.
           </p>
         </li>
@@ -52,7 +52,7 @@ function PrivacyPolicy() {
           <p>
             <strong>Company</strong> (referred to as either &quot;the
             Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
-            this Agreement) refers to ParkPals.
+            this Agreement) refers to AlgoNinja.
           </p>
         </li>
         <li>
