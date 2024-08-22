@@ -6,8 +6,10 @@ import Experience from "./pages/Experience";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsOfService";
+import ParkPalsPrivacyPolicy from "./pages/ParkPalsPrivacyPolicy";
+import ParkpalsTermsOfService from "./pages/ParkPalsTermsOfService";
+import AlgoNinjaPrivacyPolicy from "./pages/AlgoNinjaPrivacyPolicy";
+import AlgoNinjaTermsOfService from "./pages/AlgoNinjaTermsOfService";
 function App() {
   return (
     <div className="App">
@@ -17,10 +19,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<ProjectDisplay />} />
-          <Route path="/parkpals/privacy" element={<PrivacyPolicy />} />
-          <Route path="/parkpals/tos" element={<TermsOfService />} />
-          <Route path="/ninja/privacy" element={<PrivacyPolicy />} />
-          <Route path="/ninja/tos" element={<TermsOfService />} />
+          <Route path="/privacy/parkpals" element={<ParkPalsPrivacyPolicy />} />
+          <Route path="/tos/parkpals" element={<ParkpalsTermsOfService />} />
+          <Route
+            path="/privacy/algoninja"
+            element={<AlgoNinjaPrivacyPolicy />}
+          />
+          <Route path="/tos/algoninja" element={<AlgoNinjaTermsOfService />} />
+          <Route path="/privacy/algoninja" element={<PrivacyPolicy />} />
+          <Route path="/tos/algoninja" element={<TermsOfService />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer />

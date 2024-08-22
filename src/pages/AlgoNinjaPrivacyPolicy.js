@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/PrivacyPolicy.css";
-function PrivacyPolicy() {
+function AlgoNinjaPrivacyPolicy() {
   return (
     <div className="container">
       <h1>Privacy Policy</h1>
@@ -442,4 +442,4 @@ function PrivacyPolicy() {
   );
 }
 
-export default PrivacyPolicy;
+export default AlgoNinjaPrivacyPolicy;

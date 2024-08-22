@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/TermsOfService.css";
-function TermsOfService() {
+function AlgoNinjaTermsOfService() {
   return (
     <>
       <div className="container">
@@ -6602,4 +6602,4 @@ function TermsOfService() {
   );
 }
 
-export default TermsOfService;
+export default AlgoNinjaTermsOfService;
