@@ -26,8 +26,11 @@ function App() {
             element={<AlgoNinjaPrivacyPolicy />}
           />
           <Route path="/tos/algoninja" element={<AlgoNinjaTermsOfService />} />
-          <Route path="/privacy/algoninja" element={<PrivacyPolicy />} />
-          <Route path="/tos/algoninja" element={<TermsOfService />} />
+          <Route
+            path="/privacy/algoninja"
+            element={<AlgoNinjaPrivacyPolicy />}
+          />
+          <Route path="/tos/algoninja" element={<AlgoNinjaTermsOfService />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer />
