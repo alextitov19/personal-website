@@ -1,5 +1,6 @@
 import bfn from "../assets/bfn.png";
 import parkpals from "../assets/parkpals.png";
+import algo from "../assets/algo.png";
 import unity from "../assets/unity.png";
 import gopnik from "../assets/gopnik.png";
 import golf from "../assets/golf.png";
@@ -14,8 +15,8 @@ export const ProjectList = [
     link: "https://alynx.ucmerced.edu",
   },
   {
-    name: "ParkPals",
-    image: parkpals,
+    name: "AlgoNinja",
+    image: algo,
     skills:
       "SwiftUI, MongoDB, NodeJS, Express, AWS EC2, AWS S3, JWT, RestAPI, Dynamic Programming, UI/UX design, Version control systems",
     link: "https://apps.apple.com/us/app/parkpals/id6479857155",
