@@ -22,6 +22,13 @@ export const ProjectList = [
     link: "https://apps.apple.com/us/app/parkpals/id6479857155",
   },
   {
+    name: "ParkPals",
+    image: parkpals,
+    skills:
+      "SwiftUI, MongoDB, NodeJS, Express, AWS EC2, AWS S3, JWT, RestAPI, Dynamic Programming, UI/UX design, Version control systems",
+    link: "https://apps.apple.com/us/app/parkpals/id6479857155",
+  },
+  {
     name: "Best Friends Network",
     image: bfn,
     skills:
