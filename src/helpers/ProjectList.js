@@ -19,7 +19,7 @@ export const ProjectList = [
     image: algo,
     skills:
       "SwiftUI, MongoDB, NodeJS, Express, AWS EC2, AWS S3, JWT, RestAPI, Dynamic Programming, UI/UX design, Version control systems",
-    link: "https://apps.apple.com/us/app/parkpals/id6479857155",
+    link: "https://apps.apple.com/us/app/algoninja/id6639586961",
   },
   {
     name: "ParkPals",
