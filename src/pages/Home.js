@@ -40,9 +40,9 @@ function Home() {
           <li className="item">
             <h2>Back-End</h2>
             <span>
-              Here's the list ordered by importance: Machine Learning, REST API,
-              NodeJS, ExpressJS, MongoDB, MySQL, GraphQL, Web Sockets, .NET, AWS
-              S3, Docker, Kubernetes, Redis, NoSQL, Git
+              Machine Learning, REST API, NodeJS, ExpressJS, MongoDB, MySQL,
+              GraphQL, Web Sockets, .NET, AWS S3, Docker, Kubernetes, Redis,
+              NoSQL, Git
             </span>
           </li>
           <li className="item">
