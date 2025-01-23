@@ -11,8 +11,9 @@ function Home() {
         <h2>Hi, My Name is Alex</h2>
         <div className="prompt">
           <p>
-            A Software Engineer with a passion for leveraging cutting-edge
-            technology to innovate and create impactful solutions.
+            A Software Engineer passionate about AI, full-stack development, and
+            cloud technologies. I specialize in building high-performance
+            applications, from mobile to backend systems.
           </p>
           <LinkedInIcon
             onClick={() =>
@@ -33,23 +34,44 @@ function Home() {
           <li className="item">
             <h2>Front-End</h2>
             <span>
-              ReactJS, Angular, HTML, CSS, Redux, React Native, NPM, BootStrap,
-              MaterialUI, Flutter, ThreeJS
+              ReactJS, Angular, Next.js, Tailwind, HTML, CSS, Redux, React
+              Native, Bootstrap, MaterialUI, Flutter
             </span>
           </li>
           <li className="item">
             <h2>Back-End</h2>
             <span>
-              Machine Learning, REST API, NodeJS, ExpressJS, MongoDB, MySQL,
-              GraphQL, Web Sockets, .NET, AWS S3, Docker, Kubernetes, Redis,
-              NoSQL, Git
+              NodeJS, ExpressJS, REST API, GraphQL, Web Sockets, .NET, Go, PHP,
+              Docker, Kubernetes, AWS Lambda, AWS S3, Redis, NoSQL, MySQL,
+              MariaDB, OracleDB
             </span>
           </li>
           <li className="item">
-            <h2>Langauges</h2>
+            <h2>Languages</h2>
             <span>
-              JavaScript, TypeScript, Python, Java, C#, Go, C++, Swift, Kotlin,
-              C
+              JavaScript, TypeScript, Python, Java, Bash, C, C++, C#, Swift, Go,
+              Kotlin, Dart
+            </span>
+          </li>
+          <li className="item">
+            <h2>Machine Learning & AI</h2>
+            <span>
+              OpenCV, Natural Language Processing (NLP), Speech Recognition,
+              Computer Vision, AI Chatbots
+            </span>
+          </li>
+          <li className="item">
+            <h2>DevOps & Cloud</h2>
+            <span>
+              Amazon Web Services (AWS), Google Cloud, Docker, Kubernetes,
+              Nginx, CI/CD, Git, Unix
+            </span>
+          </li>
+          <li className="item">
+            <h2>Projects</h2>
+            <span>
+              RezAI (AI-powered resume tool), Alynx (AI Virtual Assistant),
+              ParkPals (iOS Dog Training App)
             </span>
           </li>
         </ol>
