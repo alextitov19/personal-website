@@ -78,3 +78,41 @@
     font-size: 30px;
   }
 }
+
+.resume-button {
+  background: linear-gradient(135deg, #ffd700, #ffb300); /* Gold Gradient */
+  color: #0a192f; /* Dark Blue Text */
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.resume-button:hover {
+  background: linear-gradient(135deg, #e6b800, #cc9900); /* Darker Gold */
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.resume-button:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}

@@ -15,17 +15,26 @@ function Home() {
             cloud technologies. I specialize in building high-performance
             applications, from mobile to backend systems.
           </p>
-          <LinkedInIcon
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/alex-titov-b072451a9/")
-            }
-          />
-          <GitHubIcon
-            onClick={() => window.open("https://github.com/alextitov19")}
-          />
-          <a href="mailto:alextitov203@gmail.com">
-            <EmailIcon />
+
+          {/* Resume Download Button */}
+          <a href="/resume.pdf" download="Alex_Titov_Resume.pdf">
+            <button className="resume-button">📄 Download My Resume</button>
           </a>
+
+          {/* Social Media Icons */}
+          <div className="social-icons">
+            <LinkedInIcon
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/alex-titov-b072451a9/")
+              }
+            />
+            <GitHubIcon
+              onClick={() => window.open("https://github.com/alextitov19")}
+            />
+            <a href="mailto:alextitov203@gmail.com">
+              <EmailIcon />
+            </a>
+          </div>
         </div>
       </div>
       <div className="skills">
