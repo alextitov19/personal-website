@@ -1,3 +1,5 @@
+/* Projects Section */
+/* Projects Section */
 .projects {
   width: 100%;
   height: auto;
@@ -5,14 +7,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.projects .projectTitle {
-  text-align: center;
-  color: #3e497a;
-  font-size: 60px;
-  font-weight: bolder;
+  background-color: #1a1a2e; /* Dark Navy */
+  padding: 120px 0 50px; /* Adds space to prevent navbar overlap */
 }
 
+/* Projects Page Title */
+.projects .projectTitle {
+  text-align: center;
+  color: #ffc857; /* Gold Accent */
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+/* Project List */
 .projectList {
   width: 70vw;
   height: auto;
@@ -21,22 +29,25 @@
   place-items: center;
 }
 
-/* MENU ITEM STYLING */
-
+/* Individual Project Cards */
 .projectItem {
   border-radius: 15px;
   width: 300px;
   height: 300px;
   margin: 40px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background: #212b46; /* Darker card background */
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .projectItem:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in;
+  box-shadow: 0px 6px 20px rgba(255, 200, 87, 0.3);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
+/* Project Card Images */
 .projectItem .bgImage {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -47,10 +58,14 @@
   background-size: cover;
 }
 
+/* Project Title Inside Cards */
 .projectItem h1 {
-  font-size: 25px;
+  font-size: 22px;
+  color: #e5e7eb; /* Light text */
+  margin-top: 10px;
 }
 
+/* Responsive Adjustments */
 @media only screen and (max-width: 1300px) {
   .projectList {
     grid-template-columns: 1fr 1fr;

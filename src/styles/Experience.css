@@ -1,0 +1,98 @@
+/* Experience Section */
+.experience {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 100px 0 50px; /* Adds space below navbar */
+  text-align: center;
+}
+
+/* Timeline Elements - Dark Background for Better Contrast */
+.vertical-timeline-element-content {
+  background: #212b46 !important; /* Dark Navy Blue */
+  color: #e5e7eb !important; /* Softer White Text */
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Timeline Title - Premium Gold */
+.vertical-timeline-element-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffc857 !important; /* Lighter Gold */
+  margin-bottom: 8px;
+}
+
+/* Timeline Subtitle - Subtle White */
+.vertical-timeline-element-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d1d5db !important; /* Light Gray */
+  margin-bottom: 12px;
+}
+
+/* Paragraph Text - Softer White */
+.vertical-timeline-element-content p {
+  color: #f5f5f5 !important; /* Bright White */
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* 🔹 Fix Date Alignment */
+.vertical-timeline-element-date {
+  color: #e6e6e6 !important; /* Light grey for contrast */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left; /* Aligns text to the timeline */
+  width: 120px; /* Ensures consistent spacing */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Timeline Icons - Classier Look */
+.vertical-timeline-element-icon {
+  background: #ffc857 !important; /* Light Gold */
+  color: #212b46 !important; /* Dark Navy for contrast */
+  box-shadow: 0 0 12px rgba(255, 200, 87, 0.5);
+}
+
+/* Hover Effects */
+.vertical-timeline-element--education:hover,
+.vertical-timeline-element--work:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 20px rgba(255, 200, 87, 0.2);
+}
+
+/* Timeline Line */
+.vertical-timeline::before {
+  background: #3e497a !important;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .vertical-timeline-element-title {
+    font-size: 18px;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 16px;
+  }
+
+  .vertical-timeline-element-content p {
+    font-size: 14px;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 20px;
+  }
+
+  /* 🔹 Fix Date Alignment on Mobile */
+  .vertical-timeline-element-date {
+    text-align: center;
+    justify-content: center;
+    width: auto;
+  }
+}
