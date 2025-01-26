@@ -17,10 +17,14 @@ function Home() {
           </p>
 
           {/* Resume Download Button */}
-          <a href="/resume.pdf" download="Alex_Titov_Resume.pdf">
-            <button className="resume-button">📄 Download My Resume</button>
-          </a>
-
+          <button
+            className="resume-button"
+            onClick={() => {
+              window.open("/resume.pdf", "_blank");
+            }}
+          >
+            Download My Resume
+          </button>
           {/* Social Media Icons */}
           <div className="social-icons">
             <LinkedInIcon
