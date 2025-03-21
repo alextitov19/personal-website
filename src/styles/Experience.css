@@ -96,3 +96,14 @@
     width: auto;
   }
 }
+
+/* Paragraph Text - Softer White with Indentation */
+.vertical-timeline-element-content p {
+  color: #f5f5f5 !important;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 12px; /* Adds a bit of horizontal margin */
+  margin: 0;
+}
