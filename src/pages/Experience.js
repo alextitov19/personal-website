@@ -33,6 +33,68 @@ function Experience() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          date="Jan 2025 - Present"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Machine Learning Intern
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            MERT Lab, University of California, Merced
+          </h4>
+          <p>
+            • Built an IoT system with Raspberry Pi, collecting real-time data
+            from weather, soil, and water sensors.
+            <br />
+            • Developed a data pipeline using MQTT, WebSockets, and REST APIs,
+            storing data in a Dockerized PostgreSQL database.
+            <br />
+            • Engineered a Node.js backend with Express and async streaming for
+            low-latency processing.
+            <br />
+            • Applied ARIMA, LSTM, Isolation Forest, and DBSCAN for forecasting
+            and anomaly detection.
+            <br />
+            • Visualized trends in a D3.js + Chart.js dashboard with real-time
+            analytics.
+            <br />
+            • Deployed containerized services with Docker, Kubernetes, and Nginx
+            for high availability.
+            <br />
+            • Used TensorFlow and Scikit-learn to enhance predictive modeling
+            and cut response time by 35%.
+            <br />• Optimized features and model accuracy using Pandas, NumPy,
+            and SciPy.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="June 2024 - Present"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Software Engineer Intern
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">ZetOrder</h4>
+          <p>
+            • Built an iOS app in SwiftUI to collect data for training a custom
+            LLM, with AI-generated customer profiles, TTS, and STT.
+            <br />
+            • Set up Google Cloud Firestore for mobile data storage and Google
+            authentication.
+            <br />
+            • Rebuilt legacy frontend from Angular to React, increasing render
+            speed by 50%.
+            <br />• Developed a backend in Go from scratch with auth,
+            WebSockets, token management, and large file handling.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="Aug 2023 - Present"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
@@ -44,22 +106,28 @@ function Experience() {
             University of California, Merced
           </h4>
           <p>
-            • Developed and launched MobileID, a virtual campus ID app with over
-            5,000 users.
+            • Launched MobileID with 5,000+ users, enabling secure digital ID on
+            mobile devices.
             <br />
-            • Integrated Apple & Google Wallet for digital ID, reducing physical
-            ID dependency by 40%.
+            • Integrated Apple & Google Wallet via DCID, reducing physical ID
+            use by 40%.
             <br />
-            • Designed an AI Virtual Assistant for real-time information,
-            improving response accuracy by 350%.
+            • Built an AI Assistant with OpenAI integration, improving info
+            delivery speed and accuracy.
             <br />
-            • Built APIs in Next.js for multilingual Speech-to-Text and
-            Text-to-Speech features.
+            • Added multilingual STT and TTS via custom Next.js APIs.
             <br />
-            • Engineered a dynamic vector database for real-time UC Merced data
-            retrieval.
-            <br />• Deployed Docker containers for improved scalability and
-            reduced deployment time by 20%.
+            • Created a real-time vector database to retrieve UC Merced data.
+            <br />
+            • Embedded Google Maps SDK for campus navigation.
+            <br />
+            • Deployed Docker containers for scalable services, cutting deploy
+            time by 20%.
+            <br />
+            • Ensured 99.9% uptime and fast query performance via backend
+            optimization (PHP, OracleDB, MySQL).
+            <br />• Contributed to agile development across infrastructure and
+            backend.
           </p>
         </VerticalTimelineElement>
 
@@ -76,56 +144,16 @@ function Experience() {
             SocialTech Labs, Inc.
           </h4>
           <p>
-            • Co-founded and led BestFriendsNetwork, a mental health app for
-            teens with 10,000+ users.
+            • Co-founded BestFriendsNetwork, a mental health app with 10,000+
+            users in six months.
             <br />
-            • Developed the iOS client using SwiftUI, boosting user engagement
-            by 25%.
+            • Built the iOS app in SwiftUI, increasing engagement by 25% and
+            satisfaction by 15%.
             <br />
-            • Built a high-performance REST API server in Go, integrating
-            DynamoDB & Redis.
-            <br />• Deployed AWS-hosted Kubernetes infrastructure, improving
-            scalability & reliability.
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="Mar 2021 - Mar 2024"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Software Engineer Intern
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">ZetOrder</h4>
-          <p>
-            • Built an iOS app in SwiftUI to train a custom LLM using AI-driven
-            text-to-speech & speech recognition.
-            <br />
-            • Migrated a legacy web client from Angular to React, improving
-            rendering speed by 50%.
-            <br />
-            • Built backend services in Go, implementing authentication,
-            WebSockets, and large file migrations.
-            <br />• Set up Google Cloud Firestore for secure data storage and
-            authentication.
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="Nov 2022 - Mar 2023"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">Web Developer</h3>
-          <h4 className="vertical-timeline-element-subtitle">Merced, CA</h4>
-          <p>
-            • Developed a website for a NASA-partnered research association
-            using HTML, CSS, and JavaScript.
-            <br />• Enhanced user engagement through interactive elements and
-            increased online visibility.
+            • Created a fast REST API in Go, backed by DynamoDB and Redis on
+            AWS.
+            <br />• Deployed infrastructure using Docker and Kubernetes,
+            improving uptime and scalability by 40%.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
