@@ -22,10 +22,13 @@ FROM nginx:alpine
 # Copy the build output to Nginx's HTML directory
 COPY --from=build /app/build /usr/share/nginx/html
 
-# ✅ Copy the resume.pdf file to be served statically
+# Copy the resume.pdf file to be served statically
 COPY public/resume.pdf /usr/share/nginx/html/resume.pdf
 
-# Expose port 80 to the outside world
+# ✅ Add custom Nginx config to support React Router
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Expose port 80
 EXPOSE 80
 
 # Start Nginx
