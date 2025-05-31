@@ -2,95 +2,233 @@ import React from "react";
 
 const PocketPulseTermsOfService = () => {
 	return (
-		<div className="max-w-4xl mx-auto px-6 py-10 text-black">
-			<h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
-
-			<p className="mb-6">
-				<strong>Effective Date:</strong> {new Date().toLocaleDateString()}
-			</p>
-
-			<p className="mb-6">
-				Welcome to PocketPulse. By downloading, accessing, or using the
-				PocketPulse application, you agree to comply with and be bound by the
-				following Terms of Service ("Terms"). Please carefully read these terms
-				before using the app. If you disagree with any part of the terms, please
-				discontinue use immediately.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">License and Use</h2>
-			<p className="mb-6">
-				PocketPulse grants you a limited, personal, non-exclusive,
-				non-transferable, revocable license to use the application for personal,
-				non-commercial use only. You agree not to copy, modify, distribute,
-				sell, lease, reverse engineer, or create derivative works based on the
-				app or its components.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">No Data Collection</h2>
-			<p className="mb-6">
-				PocketPulse does not collect, store, or share any of your personal or
-				financial data. All information entered into the app remains strictly on
-				your device, providing you full control and privacy of your data.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">
-				Disclaimer of Warranties
-			</h2>
-			<p className="mb-6">
-				PocketPulse is provided "as-is" without warranties or representations of
-				any kind, either express or implied. We make no guarantees regarding the
-				accuracy, reliability, or completeness of any content or functionality
-				within the app.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">
-				Limitation of Liability
-			</h2>
-			<p className="mb-6">
-				In no event shall PocketPulse or its developers be liable for any
-				direct, indirect, incidental, special, consequential, or exemplary
-				damages, including but not limited to damages for loss of profits, data,
-				or other intangible losses, arising from or related to your use of the
-				app.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">
-				Modifications to the Terms
-			</h2>
-			<p className="mb-6">
-				We reserve the right to update or modify these Terms at any time. You
-				are encouraged to review the terms periodically. Your continued use of
-				PocketPulse following the posting of any changes constitutes acceptance
-				of those changes.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">Termination</h2>
-			<p className="mb-6">
-				PocketPulse reserves the right to terminate your access to the app
-				immediately, without prior notice, for any reason, including but not
-				limited to violations of these Terms.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">Governing Law</h2>
-			<p className="mb-6">
-				These Terms are governed by and construed in accordance with the laws of
-				the jurisdiction where PocketPulse developers reside, without regard to
-				conflicts of law principles.
-			</p>
-
-			<h2 className="text-2xl font-semibold mt-8 mb-4">Contact Information</h2>
-			<p className="mb-6">
-				For any questions, concerns, or feedback regarding these Terms of
-				Service, please contact us at:
-				<br />
-				<a
-					href="mailto:alextitov203@gmail.com"
-					className="text-blue-600 underline"
+		<div
+			style={{
+				minHeight: "100vh",
+				backgroundColor: "#111827",
+				color: "white",
+				display: "flex",
+				justifyContent: "center",
+				padding: "3rem 1rem",
+			}}
+		>
+			<div
+				style={{
+					maxWidth: "768px",
+					width: "100%",
+					backgroundColor: "#1F2937",
+					padding: "2rem",
+					borderRadius: "0.5rem",
+					boxShadow:
+						"0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)",
+				}}
+			>
+				<h1
+					style={{
+						fontSize: "2.25rem",
+						fontWeight: "bold",
+						marginBottom: "1.5rem",
+						paddingBottom: "0.5rem",
+						borderBottom: "1px solid #4B5563",
+					}}
 				>
-					alextitov203@gmail.com
-				</a>
-				.
-			</p>
+					Terms of Service
+				</h1>
+
+				<p style={{ marginBottom: "1rem" }}>
+					<strong>Effective Date:</strong> {new Date().toLocaleDateString()}
+				</p>
+
+				<p style={{ marginBottom: "1rem" }}>
+					Welcome to PocketPulse. By using this application, you agree to be
+					bound by the following Terms of Service. Please read them carefully.
+					If you do not agree with any part of these terms, you must discontinue
+					use of the app immediately.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					1. License to Use
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					PocketPulse grants you a limited, non-exclusive, non-transferable,
+					revocable license to use the app strictly in accordance with these
+					Terms. You agree not to use the app for any unlawful purpose, or in
+					any way that could damage, disable, or impair the application.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					2. User Conduct
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					You agree not to misuse the app or attempt to gain unauthorized access
+					to any part of it. Misuse includes, but is not limited to, reverse
+					engineering, distributing, or reproducing any part of the software for
+					commercial or illegal use.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					3. Data Ownership
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					All data entered into the app by the user is stored locally on the
+					device. PocketPulse does not have access to this data and assumes no
+					responsibility for loss of data due to user error, device failure, or
+					deletion.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					4. Privacy
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					PocketPulse does not collect or transmit any personal information. For
+					details, refer to our
+					<a
+						href="/privacy/pocketpulse"
+						style={{ color: "#60A5FA", textDecoration: "underline" }}
+					>
+						{" "}
+						Privacy Policy
+					</a>
+					.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					5. Updates and Modifications
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					We reserve the right to modify or discontinue the app at any time
+					without notice. These Terms may also be updated periodically.
+					Continued use of the app following changes constitutes your acceptance
+					of those changes.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					6. Termination
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					We may terminate or suspend your access to PocketPulse without notice
+					if you breach any of these Terms. You may also discontinue use at any
+					time by deleting the app from your device.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					7. Limitation of Liability
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					PocketPulse is provided “as-is” without warranties of any kind. In no
+					event shall the developers be liable for any indirect, incidental, or
+					consequential damages arising out of or related to the use or
+					performance of the application.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					8. Disclaimers
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					We do not warrant that the app will be error-free, secure, or operate
+					without interruption. All risks associated with the use of the app are
+					assumed by the user.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					9. Governing Law
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					These Terms shall be governed by the laws of the State of California,
+					without regard to its conflict of law principles. Any disputes will be
+					resolved in accordance with California law.
+				</p>
+
+				<h2
+					style={{
+						fontSize: "1.5rem",
+						fontWeight: "600",
+						marginTop: "2rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+					10. Contact
+				</h2>
+				<p style={{ marginBottom: "1rem" }}>
+					If you have questions or concerns about these Terms, please contact us
+					at:
+					<br />
+					Email:{" "}
+					<a
+						href="mailto:alextitov203@gmail.com"
+						style={{ color: "#60A5FA", textDecoration: "underline" }}
+					>
+						alextitov203@gmail.com
+					</a>
+				</p>
+
+				<p style={{ fontSize: "0.875rem", color: "#9CA3AF" }}>
+					Last updated: {new Date().toLocaleDateString()}
+				</p>
+			</div>
 		</div>
 	);
 };
