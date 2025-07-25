@@ -1,109 +1,189 @@
 /* Experience Section */
 .experience {
-  background-color: #1a1a2e;
-  color: white;
-  padding: 100px 0 50px; /* Adds space below navbar */
+  background: var(--gradient-secondary);
+  color: var(--text-primary);
+  padding: 120px 32px 80px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Timeline Elements - Dark Background for Better Contrast */
+.experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(0, 217, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.experience > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Timeline Elements */
 .vertical-timeline-element-content {
-  background: #212b46 !important; /* Dark Navy Blue */
-  color: #e5e7eb !important; /* Softer White Text */
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  padding: 32px !important;
+  box-shadow: var(--shadow-card) !important;
+  backdrop-filter: blur(20px) !important;
+  transition: var(--transition-slow) !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
-/* Timeline Title - Premium Gold */
+.vertical-timeline-element-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: var(--transition-normal);
+}
+
+.vertical-timeline-element-content:hover::before {
+  transform: scaleX(1);
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: var(--shadow-primary) !important;
+  border-color: var(--accent-color) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Timeline Title */
 .vertical-timeline-element-title {
-  font-size: 22px;
-  font-weight: bold;
-  color: #ffc857 !important; /* Lighter Gold */
-  margin-bottom: 8px;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  background: var(--gradient-primary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  margin-bottom: 12px !important;
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.5px !important;
 }
 
-/* Timeline Subtitle - Subtle White */
+/* Timeline Subtitle */
 .vertical-timeline-element-subtitle {
-  font-size: 18px;
-  font-weight: bold;
-  color: #d1d5db !important; /* Light Gray */
-  margin-bottom: 12px;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  margin-bottom: 16px !important;
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.25px !important;
 }
 
-/* Paragraph Text - Softer White */
+/* Paragraph Text */
 .vertical-timeline-element-content p {
-  color: #f5f5f5 !important; /* Bright White */
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 500;
+  color: var(--text-secondary) !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  margin: 0 !important;
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.25px !important;
 }
 
-/* 🔹 Fix Date Alignment */
+/* Date Styling */
 .vertical-timeline-element-date {
-  color: #e6e6e6 !important; /* Light grey for contrast */
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left; /* Aligns text to the timeline */
-  width: 120px; /* Ensures consistent spacing */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  color: var(--text-secondary) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  width: 140px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.5px !important;
+  background: var(--card-bg) !important;
+  padding: 8px 12px !important;
+  border-radius: var(--radius-md) !important;
+  border: 1px solid var(--border-color) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
-/* Timeline Icons - Classier Look */
+/* Timeline Icons */
 .vertical-timeline-element-icon {
-  background: #ffc857 !important; /* Light Gold */
-  color: #212b46 !important; /* Dark Navy for contrast */
-  box-shadow: 0 0 12px rgba(255, 200, 87, 0.5);
+  background: var(--gradient-primary) !important;
+  color: var(--primary-bg) !important;
+  box-shadow: var(--shadow-primary) !important;
+  border: 2px solid var(--border-color) !important;
+  transition: var(--transition-normal) !important;
 }
 
-/* Hover Effects */
-.vertical-timeline-element--education:hover,
-.vertical-timeline-element--work:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 6px 20px rgba(255, 200, 87, 0.2);
+.vertical-timeline-element-icon:hover {
+  transform: scale(1.1) !important;
+  box-shadow: var(--shadow-primary) !important;
 }
 
 /* Timeline Line */
 .vertical-timeline::before {
-  background: #3e497a !important;
+  background: var(--gradient-primary) !important;
+  width: 3px !important;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3) !important;
 }
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
+  .experience {
+    padding: 100px 20px 60px;
+  }
+
   .vertical-timeline-element-title {
-    font-size: 18px;
+    font-size: 20px !important;
   }
 
   .vertical-timeline-element-subtitle {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .vertical-timeline-element-content p {
-    font-size: 14px;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
   }
 
   .vertical-timeline-element-content {
-    padding: 20px;
+    padding: 24px !important;
   }
 
-  /* 🔹 Fix Date Alignment on Mobile */
   .vertical-timeline-element-date {
-    text-align: center;
-    justify-content: center;
-    width: auto;
+    text-align: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    font-size: 13px !important;
+    padding: 6px 10px !important;
   }
 }
 
-/* Paragraph Text - Softer White with Indentation */
-.vertical-timeline-element-content p {
-  color: #f5f5f5 !important;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 500;
-  text-align: left;
-  padding-left: 12px; /* Adds a bit of horizontal margin */
-  margin: 0;
+@media only screen and (max-width: 480px) {
+  .vertical-timeline-element-content {
+    padding: 20px !important;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 18px !important;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 15px !important;
+  }
+
+  .vertical-timeline-element-content p {
+    font-size: 14px !important;
+  }
 }
