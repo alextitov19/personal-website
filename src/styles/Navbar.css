@@ -91,8 +91,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: absolute;
+  justify-content: flex-start;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -110,10 +110,20 @@
   }
 }
 
+#open .toggleButton {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+}
+
 #open .links {
   flex-direction: column;
   gap: 24px;
-  margin-top: 20px;
+  margin-top: 120px;
+  display: flex;
 }
 
 #open a {
@@ -125,6 +135,7 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
+  display: block;
 }
 
 #open a:hover {
@@ -158,6 +169,7 @@
   .toggleButton {
     display: flex;
     align-items: center;
+    margin-left: auto;
   }
 
   .toggleButton svg {
@@ -168,25 +180,43 @@
     display: none;
   }
 
-  #close a {
+  #close .links {
     display: none;
+  }
+
+  #open .links {
+    display: flex;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
   .toggleButton {
     display: none;
   }
 
-  .hiddenLinks {
-    display: none;
+  .links {
+    display: flex;
   }
 
   #open {
     height: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #open .links {
     flex-direction: row;
+    margin-top: 0;
+  }
+
+  #open a {
+    width: auto;
+    background: transparent;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
   }
 }
