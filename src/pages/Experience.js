@@ -14,64 +14,64 @@ function Experience() {
       <VerticalTimeline lineColor="#3e497a">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="Aug 2022 - Dec 2025"
+          date="Aug 2022 - May 2026"
           iconStyle={{ background: "#3e497a", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Computer Science and Engineering
+            BS, Computer Science and Engineering
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             University of California, Merced
           </h4>
           <p>
-            Courses: Algorithm Design, Data Structures, AI, Networking,
-            Full-Stack Web & Mobile Development, Game Development, Computer
-            Vision.
+            Relevant Courses: Data Structures and Algorithms, AI, Networking,
+            Full-Stack Web, Computer Vision, Software Engineering
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Jan 2025 - Present"
+          date="Jan 2025 - Current"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Machine Learning Intern
+            Software Engineer Intern
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            MERT Lab, University of California, Merced
-          </h4>
+          <h4 className="vertical-timeline-element-subtitle">YsoDirty</h4>
           <p>
-            • Built an IoT system with Raspberry Pi, collecting real-time data
-            from weather, soil, and water sensors.
+            • Spearheaded end-to-end development of a full-stack, cross-platform
+            mobile car wash marketplace, enabling customers to book home-service
+            car washes.
             <br />
-            • Developed a data pipeline using MQTT, WebSockets, and REST APIs,
-            storing data in a Dockerized PostgreSQL database.
+            • Developed the frontend using React Native with Expo, TypeScript,
+            and NativeWind for iOS, Android, and Web.
             <br />
-            • Engineered a Node.js backend with Express and async streaming for
-            low-latency processing.
+            • Engineered backend RESTful APIs in Go (Gin), integrating
+            PostgreSQL (AWS RDS), AWS S3 for images, and Redis for caching and
+            real-time chat.
             <br />
-            • Applied ARIMA, LSTM, Isolation Forest, and DBSCAN for forecasting
-            and anomaly detection.
+            • Designed and implemented a matching algorithm to pair customers
+            with WashPros by proximity, availability, and ratings.
             <br />
-            • Visualized trends in a D3.js + Chart.js dashboard with real-time
-            analytics.
+            • Integrated Stripe, Checkr, Twilio, and AWS SES with webhook
+            handling.
             <br />
-            • Deployed containerized services with Docker, Kubernetes, and Nginx
-            for high availability.
+            • Built real-time messaging with Redis and WebSockets; persisted
+            chat to PostgreSQL.
             <br />
-            • Used TensorFlow and Scikit-learn to enhance predictive modeling
-            and cut response time by 35%.
-            <br />• Optimized features and model accuracy using Pandas, NumPy,
-            and SciPy.
+            • Established CI/CD with GitHub Actions, Docker builds, and AWS
+            Lambda deployments.
+            <br />
+            • Managed AWS infrastructure (EC2, ECR, EKS, RDS, SES, Route53),
+            achieving high reliability and 99.9% uptime.
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="June 2024 - Present"
+          date="June 2024 - Current"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -80,22 +80,33 @@ function Experience() {
           </h3>
           <h4 className="vertical-timeline-element-subtitle">ZetOrder</h4>
           <p>
-            • Built an iOS app in SwiftUI to collect data for training a custom
-            LLM, with AI-generated customer profiles, TTS, and STT.
+            • Led development of an iOS app in SwiftUI to capture LLM training
+            data via voice and text.
             <br />
-            • Set up Google Cloud Firestore for mobile data storage and Google
-            authentication.
+            • Built backend services in Go supporting real-time AI chat,
+            JWT auth, token refresh, and secure large file uploads to S3.
             <br />
-            • Rebuilt legacy frontend from Angular to React, increasing render
-            speed by 50%.
-            <br />• Developed a backend in Go from scratch with auth,
-            WebSockets, token management, and large file handling.
+            • Designed and deployed MoneyMap, a full-stack financial advisory
+            platform; implemented data pipelines from PostgreSQL to AI models.
+            <br />
+            • Developed affiliate dashboard with React, TypeScript, Tailwind,
+            and Go.
+            <br />
+            • Refactored Angular to React, improving load times by 50%.
+            <br />
+            • Integrated Firestore and Google Authentication.
+            <br />
+            • Wrote unit & integration tests with React Testing Library, Mocha,
+            and Go test; integrated CI.
+            <br />
+            • Dockerized and deployed services; used Git and Makefile scripts
+            for DevOps workflows.
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Aug 2023 - Present"
+          date="Aug 2023 - May 2025"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
@@ -106,54 +117,54 @@ function Experience() {
             University of California, Merced
           </h4>
           <p>
-            • Launched MobileID with 5,000+ users, enabling secure digital ID on
-            mobile devices.
+            • Built and deployed MobileID, a PHP application used by 9,000+
+            students for secure dynamic barcode access, reducing entry fraud by
+            95%.
             <br />
-            • Integrated Apple & Google Wallet via DCID, reducing physical ID
-            use by 40%.
+            • Developed Alynx, an AI chatbot using React, Tailwind, Next.js,
+            Node.js, and OpenAI API with multilingual vector search, TTS, and
+            STT.
             <br />
-            • Built an AI Assistant with OpenAI integration, improving info
-            delivery speed and accuracy.
+            • Dockerized and deployed apps with Kubernetes for scalable,
+            fault-tolerant production; ensured 99.9% backend uptime.
             <br />
-            • Added multilingual STT and TTS via custom Next.js APIs.
+            • Created DCID digital campus ID with Apple Wallet & Google Wallet
+            integration.
             <br />
-            • Created a real-time vector database to retrieve UC Merced data.
+            • Implemented facial recognition check-in system using Python,
+            OpenCV, and deep learning interfacing with OracleDB, MySQL, and
+            PostgreSQL.
             <br />
-            • Embedded Google Maps SDK for campus navigation.
-            <br />
-            • Deployed Docker containers for scalable services, cutting deploy
-            time by 20%.
-            <br />
-            • Ensured 99.9% uptime and fast query performance via backend
-            optimization (PHP, OracleDB, MySQL).
-            <br />• Contributed to agile development across infrastructure and
-            backend.
+            • Integrated Google Maps SDK for real-time wayfinding in the
+            mobile client.
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Mar 2021 - Mar 2024"
+          date="Feb 2020 - Nov 2022"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full Stack Engineer | Co-Founder
+            Co-founder, CTO
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             SocialTech Labs, Inc.
           </h4>
           <p>
-            • Co-founded BestFriendsNetwork, a mental health app with 10,000+
-            users in six months.
+            • Developed and launched a teen-focused mental health social app.
             <br />
-            • Built the iOS app in SwiftUI, increasing engagement by 25% and
-            satisfaction by 15%.
+            • Built iOS client in SwiftUI and backend REST API in Go (Gin) with
+            JWT, WebSockets, and image storage.
             <br />
-            • Created a fast REST API in Go, backed by DynamoDB and Redis on
-            AWS.
-            <br />• Deployed infrastructure using Docker and Kubernetes,
-            improving uptime and scalability by 40%.
+            • Deployed scalable AWS infrastructure (EC2, EKS, ECR, DynamoDB,
+            S3, Route53).
+            <br />
+            • Implemented unit testing, A/B tests, and CI/CD pipelines.
+            <br />
+            • Recruited and led a technical team of 8 interns; managed App
+            Store releases.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
