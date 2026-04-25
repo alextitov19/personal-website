@@ -1,4 +1,11 @@
 node_modules
+dist
 build
-.dockerignore
-Dockerfile
+.git
+.github
+.vscode
+.idea
+.DS_Store
+*.log
+yarn.lock
+.eslintcache

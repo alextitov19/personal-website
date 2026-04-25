@@ -1,0 +1,77 @@
+import type { ExperienceEntry } from "@/types";
+
+export const experience: ExperienceEntry[] = [
+  {
+    kind: "work",
+    title: "Software Engineer Intern",
+    org: "YsoDirty",
+    start: "Jan 2025",
+    end: "Present",
+    bullets: [
+      "Spearheaded end-to-end development of a full-stack, cross-platform mobile car-wash marketplace, enabling customers to book home-service car washes.",
+      "Built the frontend in React Native (Expo) with TypeScript and NativeWind for iOS, Android, and Web.",
+      "Engineered RESTful APIs in Go (Gin), integrating PostgreSQL on AWS RDS, S3 for image storage, and Redis for caching and real-time chat.",
+      "Designed an intelligent matching algorithm pairing customers with WashPros by proximity, availability, and ratings.",
+      "Integrated Stripe (payments), Checkr (background checks), Twilio (comms), and AWS SES with comprehensive webhook handling.",
+      "Built a real-time messaging system over Redis + WebSockets with persistent storage in PostgreSQL.",
+      "Established CI/CD with GitHub Actions, Docker builds, and AWS Lambda deployments.",
+      "Operated scalable AWS infrastructure (EC2, ECR, EKS, RDS, SES, Route53) at 99.9% uptime.",
+    ],
+  },
+  {
+    kind: "work",
+    title: "Software Engineer Intern",
+    org: "ZetOrder",
+    start: "Jun 2024",
+    end: "Present",
+    bullets: [
+      "Led development of an iOS app in SwiftUI to capture LLM training data via voice and text inputs.",
+      "Built scalable Go backend services for real-time AI chat, JWT authentication, token refresh, and large file uploads to S3.",
+      "Designed and deployed MoneyMap, a financial advisory platform with data pipelines connecting PostgreSQL to AI models.",
+      "Developed an affiliate dashboard using React, TypeScript, Tailwind CSS, and Go services.",
+      "Refactored a legacy Angular codebase to React, achieving a 50% improvement in page load times.",
+      "Integrated Firestore and Google Authentication for secure user management.",
+      "Wrote unit and integration tests using React Testing Library, Mocha, and Go testing; integrated with CI.",
+      "Dockerized microservices and implemented DevOps workflows via Git and Makefile automation.",
+    ],
+  },
+  {
+    kind: "work",
+    title: "Software Engineer Intern",
+    org: "University of California, Merced",
+    start: "Aug 2023",
+    end: "May 2025",
+    bullets: [
+      "Built and deployed MobileID, a PHP application serving 9,000+ students for secure dynamic-barcode access control, reducing entry fraud by 95%.",
+      "Developed Alynx, an AI-powered chatbot using React, Tailwind CSS, Next.js, Node.js, and OpenAI with multilingual vector search, TTS, and STT.",
+      "Containerized applications with Docker and orchestrated with Kubernetes for fault-tolerant production at 99.9% uptime.",
+      "Created DCID, a digital campus ID with seamless Apple Wallet and Google Wallet integration.",
+      "Implemented a facial-recognition check-in system using Python, OpenCV, and deep learning, interfacing with OracleDB, MySQL, and PostgreSQL.",
+      "Integrated the Google Maps SDK for real-time wayfinding inside the campus mobile client.",
+    ],
+  },
+  {
+    kind: "work",
+    title: "Co-founder & CTO",
+    org: "SocialTech Labs, Inc.",
+    start: "Feb 2020",
+    end: "Nov 2022",
+    bullets: [
+      "Co-founded and launched a teen-focused mental-health social application addressing adolescent wellness needs.",
+      "Built the iOS client in SwiftUI and a Go (Gin) REST API with JWT authentication, WebSocket support, and cloud image storage.",
+      "Architected scalable AWS infrastructure: EC2, EKS, ECR, DynamoDB, S3, and Route53 for high availability.",
+      "Implemented unit testing, A/B testing frameworks, and CI/CD pipelines for streamlined deployment.",
+      "Recruited and led a technical team of 8 engineers and interns; managed App Store submission and release processes.",
+    ],
+  },
+  {
+    kind: "education",
+    title: "B.S. Computer Science and Engineering",
+    org: "University of California, Merced",
+    start: "Aug 2022",
+    end: "May 2026",
+    bullets: [
+      "Relevant coursework: Data Structures and Algorithms, Artificial Intelligence, Networking, Full-Stack Web Development, Computer Vision, Software Engineering, Natural Language Processing.",
+    ],
+  },
+];

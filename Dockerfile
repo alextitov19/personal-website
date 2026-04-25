@@ -1,35 +1,20 @@
-# Step 1: Build the React app with Node.js
-FROM node:alpine as build
+# Build stage
+FROM node:22-alpine AS build
 
-# Set the working directory
+RUN corepack enable
 WORKDIR /app
 
-# Copy the package.json and yarn.lock files
-COPY package.json yarn.lock ./
+COPY package.json pnpm-lock.yaml* ./
+RUN pnpm install --frozen-lockfile || pnpm install
 
-# Install dependencies
-RUN yarn install
-
-# Copy the rest of the application code
 COPY . .
+RUN pnpm build
 
-# Build the React app for production
-RUN yarn build
+# Serve stage
+FROM nginx:1.27-alpine
 
-# Step 2: Serve the React app with Nginx
-FROM nginx:alpine
-
-# Copy the build output to Nginx's HTML directory
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Copy the resume.pdf file to be served statically
-COPY public/resume.pdf /usr/share/nginx/html/resume.pdf
-
-# ✅ Add custom Nginx config to support React Router
+COPY --from=build /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Expose port 80
 EXPOSE 80
-
-# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]

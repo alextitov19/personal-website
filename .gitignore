@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+.eslintcache
+yarn.lock
+build/
+tsconfig.tsbuildinfo
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
