@@ -159,15 +159,15 @@ function FocusStrip() {
         {[
           {
             label: "Now",
-            body: "Shipping at YsoDirty + ZetOrder. Researching test-time compute allocation.",
+            body: "Forward Deployed Engineer at Benmore — embedding with clients to ship Django + Next.js + Expo systems end-to-end.",
           },
           {
             label: "Recently",
-            body: "Refactored a legacy Angular app to React — 50% faster page loads.",
+            body: "Wrapped CSE 188 research on test-time compute allocation across Claude Haiku 4.5 and Sonnet 4.6.",
           },
           {
             label: "Looking for",
-            body: "A team that ships fast and obsesses over the last 5%.",
+            body: "Hard problems where shipping fast and obsessing over the last 5% both matter.",
           },
         ].map((item) => (
           <div
