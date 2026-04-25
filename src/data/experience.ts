@@ -3,10 +3,27 @@ import type { ExperienceEntry } from "@/types";
 export const experience: ExperienceEntry[] = [
   {
     kind: "work",
+    title: "Forward Deployed Engineer",
+    org: "Benmore Technologies",
+    start: "Jan 2026",
+    end: "Present",
+    bullets: [
+      "Embed with clients end-to-end — running discovery, scoping, kickoff, and shipping production systems across Django, FastAPI, React/Next.js, and React Native (Expo).",
+      "Lead engagements across healthcare (EHR, telemedicine), commerce (Shopify integrations), real-estate, and aviation/operations clients — turning ambiguous problem statements into scoped MVP → premium → enterprise build options.",
+      "Own the full stack: Django + DRF + Celery + Postgres on the backend; Next.js with OpenAPI-typed clients on the web; Expo + TypeScript on mobile; deployed on DigitalOcean and Heroku with structured logging and Sentry from day one.",
+      "Architect multi-tenant SaaS with strict org-level isolation, audit trails, and Kafka-style event contracts for cross-service communication; enforce HIPAA and GDPR safeguards on healthcare and consumer data.",
+      "Build and maintain Benmore-Meridian — our internal tooling repo housing the `bm` CLI (Python + uv + Typer), 55+ Claude Code skills, and prompt templates that compound team productivity across every client engagement.",
+      "Pioneer agent-native engineering practices — design systems where Claude Code agents are first-class developers: parallel review pipelines, scope generators, ticket creation, automated PR review, and compound-on-lessons feedback loops.",
+      "Integrate critical third-party services as a baseline: Stripe (subscriptions + webhooks), Mailjet/SES (transactional email), Expo + Firebase push, TOTP/2FA, OAuth, and Sentry for observability.",
+      "Run code review at a high bar — ship with `ruff`, `mypy`, `pytest`, security scanners, and human + agent review on every PR before it touches main.",
+    ],
+  },
+  {
+    kind: "work",
     title: "Software Engineer Intern",
     org: "YsoDirty",
     start: "Jan 2025",
-    end: "Present",
+    end: "Dec 2025",
     bullets: [
       "Spearheaded end-to-end development of a full-stack, cross-platform mobile car-wash marketplace, enabling customers to book home-service car washes.",
       "Built the frontend in React Native (Expo) with TypeScript and NativeWind for iOS, Android, and Web.",
@@ -23,7 +40,7 @@ export const experience: ExperienceEntry[] = [
     title: "Software Engineer Intern",
     org: "ZetOrder",
     start: "Jun 2024",
-    end: "Present",
+    end: "Dec 2025",
     bullets: [
       "Led development of an iOS app in SwiftUI to capture LLM training data via voice and text inputs.",
       "Built scalable Go backend services for real-time AI chat, JWT authentication, token refresh, and large file uploads to S3.",
