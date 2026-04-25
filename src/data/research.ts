@@ -57,8 +57,8 @@ export const research: ResearchPaper[] = [
       {
         src: "/research/test-time-compute/fig3-cost-efficiency.png",
         caption:
-          "Figure 3 — Cost-efficiency leaderboard: accuracy per dollar across all conditions. Sonnet S2 at B=16K matches single-shot accuracy at roughly 60% of the cost.",
-        alt: "Horizontal bar chart of cost-efficiency rankings across model, strategy, and budget combinations.",
+          "Figure 3 — Cost-efficiency (accuracy / mean USD per attempt) across cells, sorted descending. Single-shot decoding (S₀) sweeps the top six positions on both models; high-budget self-consistency (S₃) is the least efficient. At fixed accuracy on Sonnet at B=16K, self-refine (S₂) reaches the same 95% as extended thinking (S₁) at roughly 60% of the cost.",
+        alt: "Horizontal bar chart of cost-efficiency rankings across model, strategy, and budget combinations, with single-shot S0 dominating the top.",
       },
     ],
     highlights: [
